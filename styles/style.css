@@ -6,11 +6,21 @@ body {
 }
 
 label {
+    font-size: 1rem;
     margin-right: 10px;
+    
 }
 
 select {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #787878;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #ejercicios {
@@ -39,4 +49,14 @@ h1{
 img{
     width: 300px;
     height: 240px;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }

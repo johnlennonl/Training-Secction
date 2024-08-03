@@ -10,40 +10,40 @@
 <body>
     <div class="container-app">
             <img src="spen-removebg-preview(1).png" alt="logotipo">
-        <h1>Registro de Rutina de Gimnasio</h1>
+            <h1>Registro de Rutina de Gimnasio</h1>
 
-    <div id="usuario">
-        <label for="usuarios">Selecciona Usuario:</label>
-        <select id="usuarios" onchange="cargarRutina()">
-            <option value="">Selecciona...</option>
-            <option value="john-lennon">John Lennon</option>
-            <!-- Agrega más usuarios aquí -->
-        </select>
-    </div>
-
-    <div id="rutina" style="display:none;">
-        <h2>Rutina de <span id="nombre-usuario"></span></h2>
-        <label for="dias">Selecciona Día:</label>
-        <select id="dias" onchange="mostrarEjercicios()">
-            <option value="">Selecciona...</option>
-            <option value="lunes">Lunes</option>
-            <option value="martes">Martes</option>
-            <option value="miercoles">Miércoles</option>
-            <option value="jueves">Jueves</option>
-            <option value="viernes">Viernes</option>
-            <option value="sabado">Sábado</option>
-            <option value="domingo">Domingo</option>
-        </select>
-
-        <div id="ejercicios" style="display:none;">
-            <h3>Ejercicios para <span id="dia-seleccionado"></span></h3>
-            <ul id="lista-ejercicios">
-                <!-- Aquí se agregarán los ejercicios -->
-            </ul>
-
-            <button onclick="agregarEjercicio()">Agregar Ejercicio</button>
-        </div>
-    </div>
+            <div id="usuario">
+                <label for="usuarios">Selecciona Usuario:</label>
+                <select id="usuarios" onchange="cargarRutina()">
+                    <option value="">Selecciona...</option>
+                    <option value="john-lennon">John Lennon</option>
+                    <!-- Agrega más usuarios aquí -->
+                </select>
+            </div>
+        
+            <div id="rutina" style="display:none;">
+                <h2>Rutina de <span id="nombre-usuario"></span></h2>
+                <label for="dias">Selecciona Día:</label>
+                <select id="dias" onchange="mostrarEjercicios()">
+                    <option value="">Selecciona...</option>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miércoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+        
+                <div id="ejercicios" style="display:none;">
+                    <h3>Ejercicios para <span id="dia-seleccionado"></span></h3>
+                    <ul id="lista-ejercicios">
+                        <!-- Aquí se agregarán los ejercicios -->
+                    </ul>
+        
+                    <button onclick="agregarEjercicio()">Agregar Ejercicio</button>
+                </div>
+            </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
